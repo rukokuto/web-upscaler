@@ -4,29 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Upscaler HD</title>
-    <style>
-        body { font-family: sans-serif; text-align: center; background: #f4f4f9; padding: 20px; }
-        .container { max-width: 500px; margin: auto; background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .ad-space { background: #eee; padding: 10px; margin: 15px 0; border: 1px dashed #999; }
-        button { padding: 12px 25px; background: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
-    </style>
+    <!-- Tailwind CSS untuk desain modern -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-slate-900 text-white min-h-screen flex flex-col items-center justify-center p-4">
 
-<div class="container">
-    <h1>AI Photo Upscaler</h1>
-    <p>Ubah foto Anda jadi HD dengan satu klik!</p>
+    <div class="w-full max-w-md bg-slate-800 p-8 rounded-2xl shadow-2xl border border-slate-700 text-center">
+        <h1 class="text-3xl font-bold mb-2 text-blue-400">✨ AI Upscaler</h1>
+        <p class="text-slate-400 mb-6">Tingkatkan kualitas foto blur Anda ke level HD.</p>
 
-    <div class="ad-space">Pasang Kode Iklan Anda di Sini</div>
+        <!-- Tempat Iklan -->
+        <div class="bg-slate-900 p-4 rounded-lg mb-6 border border-dashed border-slate-600 text-slate-500 text-sm">
+            Space Iklan Anda
+        </div>
 
-    <input type="file" id="upload" accept="image/*">
-    <br><br>
-    <button onclick="alert('Hubungkan ke API AI nanti!')">Proses ke HD</button>
+        <!-- Area Upload -->
+        <div class="border-2 border-dashed border-slate-600 p-10 rounded-xl mb-6 hover:border-blue-500 transition-colors cursor-pointer">
+            <span class="text-slate-300">Klik atau seret foto di sini</span>
+        </div>
 
-    <div id="result" style="margin-top:20px;"></div>
+        <button class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-blue-900/50">
+            Upscale Sekarang
+        </button>
 
-    <div class="ad-space">Pasang Kode Iklan Anda di Sini</div>
-</div>
+        <!-- Tempat Iklan Bawah -->
+        <div class="bg-slate-900 p-4 rounded-lg mt-6 border border-dashed border-slate-600 text-slate-500 text-sm">
+            Space Iklan Anda
+        </div>
+    </div>
 
 </body>
 </html>
