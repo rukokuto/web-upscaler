@@ -3,30 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Upscaler HD</title>
+    <title>AI Upscaler Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; background: #0f172a; color: white; text-align: center; margin: 0; padding: 20px; }
-        .container { max-width: 400px; margin: auto; background: #1e293b; padding: 30px; border-radius: 20px; box-shadow: 0 10px 15px rgba(0,0,0,0.3); }
-        h1 { font-size: 24px; margin-bottom: 10px; }
-        .upload-area { border: 2px dashed #475569; padding: 40px; border-radius: 15px; margin: 20px 0; cursor: pointer; color: #94a3b8; }
-        button { width: 100%; padding: 15px; background: #3b82f6; color: white; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; }
-        button:hover { background: #2563eb; }
-        .ad-space { background: #334155; padding: 10px; border-radius: 8px; margin: 15px 0; font-size: 12px; color: #64748b; }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(to right, #60a5fa, #a78bfa); -webkit-background-clip: text; color: transparent; }
     </style>
 </head>
-<body>
+<body class="bg-slate-950 text-white min-h-screen flex items-center justify-center p-6">
 
-<div class="container">
-    <h1>✨ AI Photo Upscaler</h1>
-    <p>Ubah foto blur jadi tajam dalam hitungan detik.</p>
+    <div class="glass w-full max-w-sm p-8 rounded-3xl shadow-2xl text-center">
+        <!-- Judul -->
+        <h1 class="text-4xl font-extrabold mb-2 gradient-text">AI Upscaler</h1>
+        <p class="text-slate-400 mb-8 text-sm">Transformasi foto Anda ke kualitas HD</p>
 
-    <div class="ad-space">Space Iklan</div>
+        <!-- Area Iklan -->
+        <div class="mb-6 p-3 border border-slate-700 rounded-xl text-[10px] text-slate-500 uppercase tracking-widest">
+            Advertisement
+        </div>
 
-    <div class="upload-area">Pilih Foto dari Galeri</div>
-    <button onclick="alert('Hubungkan API AI!')">Upscale Sekarang</button>
+        <!-- Tombol Upload -->
+        <div class="group relative mb-6">
+            <div class="absolute inset-0 bg-blue-500 blur-xl opacity-20 group-hover:opacity-40 transition-opacity rounded-xl"></div>
+            <button class="relative w-full py-12 border-2 border-dashed border-slate-600 rounded-2xl text-slate-400 group-hover:border-blue-400 transition-all">
+                <span class="block text-4xl mb-2">📸</span>
+                Klik untuk upload foto
+            </button>
+        </div>
 
-    <div class="ad-space">Space Iklan</div>
-</div>
+        <!-- Tombol Utama -->
+        <button class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 py-4 rounded-xl font-bold transition-all transform hover:scale-[1.02] shadow-lg">
+            Proses Sekarang
+        </button>
+    </div>
 
 </body>
 </html>
+
